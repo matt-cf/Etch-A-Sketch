@@ -1,0 +1,13 @@
+.board {
+    display: grid;
+    height: 500px;
+    width: 500px;
+}
+
+.square {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border: 0.005px solid grey;
+}
+
