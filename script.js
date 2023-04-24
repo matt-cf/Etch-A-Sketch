@@ -13,7 +13,7 @@ function createBoard(size) {
         square.addEventListener('mouseover', colorDraw)
         square.style.backgroundColor = 'grey';
         square.className = "square";
-        board.appendChild(square);
+        board.insertAdjacentElement("beforeend", square);
     }
 }
 
