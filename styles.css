@@ -1,7 +1,107 @@
+@font-face {
+    font-family: bauhaus93;
+    src: url(./fonts/BAUHS93.ttf);
+    font-family: brushItalic;
+    src: url(./fonts/BRUSHSCI.ttf);
+}
+
+@font-face {
+    font-family: brushItalic;
+    src: url(./fonts/BRUSHSCI.ttf);
+}
+
+@font-face {
+    font-family: myriadPro;
+    src: url(./fonts/MYRIADPRO-REGULAR.OTF);
+}
+
+body {
+    font-family: myriadPro; 
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    min-width: 200px;
+    background-color: lightgrey;
+}
+
+.title {
+    font-family: bauhaus93;
+    padding-left: 100px;
+}
+
+.status {
+    font-family: brushItalic;
+    padding-right: 100px;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex: auto;
+    justify-content: space-between;
+    padding: 15px 70px;
+    font-size: 50px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.buttons {
+    display:flex;
+    flex-direction: column;
+}
+
+button {
+    display: flex;
+    border-top-right-radius: 7.5px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 50px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 0px;
+}
+
+.label {
+    display: flex;
+    border-top-right-radius: 7.5px;
+    padding-left: 10px;
+    padding-right: 50px;
+    margin-bottom: 2px;
+}
+
+#eraser {
+    margin-bottom: 10px;
+}
+
+#resetBtn {
+    margin-top: 100px;
+    width: 100%;
+}
+
+#inputBox {
+    height: 20px;
+    text-align: center;
+}
+
+.resizePanel {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
 .board {
     display: grid;
     height: 500px;
     width: 500px;
 }
-
-

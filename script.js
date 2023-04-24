@@ -13,7 +13,7 @@ function createBoard(size) {
         square.addEventListener('mouseover', colorDraw)
         square.style.backgroundColor = 'grey';
         square.className = "square";
-        board.insertAdjacentElement("beforeend", square);
+        board.appendChild(square);
     }
 }
 
@@ -48,8 +48,8 @@ function resetBoard() {
     squares.forEach((div) => div.style.backgroundColor = 'grey');
 } 
 
-document.querySelector('body').addEventListener('click', (e) => {
-    if(e.target.tagName != 'BUTTON') {
+document.querySelector('.board').addEventListener('click', (e) => {
+    if(e.target.tagName = 'BUTTON') {
         click = !click;
         if(click) {
             document.querySelector('.status').textContent = 'Coloring'

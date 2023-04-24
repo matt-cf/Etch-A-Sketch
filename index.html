@@ -9,24 +9,31 @@
     <link rel="stylesheet" href="./reset.css">
 </head>
 <body>
-    <div class = "title">Etch-A-Sketch</h1>
-    <div class="content">
+    <div class="header">
+        <div class="title">Etch-A-Sketch</div>
         <div class="status">Coloring</div>
+    </div>
+    <div class="content">
         <div class="board"></div>
-        <div class="buttons">
-            <button onclick="changeColor('grey')">eraser</button>
-            <button onclick="changeColor('black')">black</button>
-            <button onclick="changeColor('white')">white</button>
-            <button onclick="changeColor('red')">red</button>
-            <button onclick="changeColor('rainbow')">rainbow</button>
-            <button onclick="resetBoard()">reset</button>
+        <div class="panel">
+            <div class="buttons">
+                <button id='eraser' onclick="changeColor('grey')">ERASER</button>
+                <div class="label">Brush Color:</div>
+                <button onclick="changeColor('black')">BLACK</button>
+                <button onclick="changeColor('white')">WHITE</button>
+                <button onclick="changeColor('red')">RED</button>
+                <button onclick="changeColor('rainbow')">RAINBOW</button>
+            </div>
+            <div class="resizePanel">
+                <input id='inputBox' type="text" 
+                placeholder="Size of Board" 
+                value = "16" 
+                onchange="changeSize(this.value)"/>
+                <button id="setSizeBtn">Set Size</button>
+            </div>
+            <button id='resetBtn' class="buttons" onclick="resetBoard()">RESET</button>
         </div>
     </div>
-        <input type="text" 
-        placeholder="Size of Board" 
-        value = "16" 
-        onchange="changeSize(this.value)" />
-        <button>Set Size</button>
     <script src="script.js" defer></script>
 </body>
 </html>
